@@ -17,9 +17,9 @@ Firebase App Indexing code guideline for Android developers
 ## Screenshots
 <table width="100%">
 	<tr>
-	  <th><img src="https://user-images.githubusercontent.com/1763410/35990869-0a688ace-0d38-11e8-82d7-390cd4df1e85.png" width="33%"></th>
-    <th><img src="https://user-images.githubusercontent.com/1763410/35990871-0aa5a13e-0d38-11e8-8c54-2aaa1449d197.png" width="33%"></th>
-    <th><img src="https://user-images.githubusercontent.com/1763410/35990872-0ae40956-0d38-11e8-9b90-b118ac42c71f.png" width="33%"></th>
+	  <th><img src="https://user-images.githubusercontent.com/1763410/35990869-0a688ace-0d38-11e8-82d7-390cd4df1e85.png"></th>
+    <th><img src="https://user-images.githubusercontent.com/1763410/35990871-0aa5a13e-0d38-11e8-8c54-2aaa1449d197.png"></th>
+    <th><img src="https://user-images.githubusercontent.com/1763410/35990872-0ae40956-0d38-11e8-9b90-b118ac42c71f.png"></th>
 	</tr>
 </table>
 
