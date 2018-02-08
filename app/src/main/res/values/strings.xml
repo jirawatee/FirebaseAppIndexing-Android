@@ -1,0 +1,9 @@
+<resources>
+	<string name="app_name">Indexing</string>
+	<string name="none">None</string>
+	<string name="btn_add">+ Personal</string>
+	<string name="btn_remove">- Personal</string>
+	<string name="btn_clear">x Personal</string>
+	<string name="first_name">จิรวัฒน์</string>
+	<string name="last_name">กรัณย์วิทยาการ</string>
+</resources>

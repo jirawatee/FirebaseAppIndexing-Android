@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example.indexing"
+	android:installLocation="auto">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+	<application
+		android:allowBackup="true"
+		android:hardwareAccelerated="true"
+		android:icon="@mipmap/ic_launcher_round"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<activity
+			android:name=".MainActivity"
+			android:exported="true"
+			android:launchMode="singleTop">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter
+				android:autoVerify="true">
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data
+					android:pathPrefix="/bangkok"
+					android:host="mokmoon.com"
+					android:scheme="https" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".MokMoonActivity"
+			android:exported="true"
+			android:launchMode="singleTop">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="mokmoon" />
+			</intent-filter>
+		</activity>
+
+		<receiver android:name=".AppIndexingUpdateReceiver"
+			android:exported="true"
+			android:permission="com.google.android.gms.permission.APPINDEXING">
+			<intent-filter>
+				<action android:name="com.google.firebase.appindexing.UPDATE_INDEX" />
+			</intent-filter>
+		</receiver>
+
+		<service android:name=".AppIndexingService" android:permission="android.permission.BIND_JOB_SERVICE" />
+
+	</application>
+
+</manifest>
