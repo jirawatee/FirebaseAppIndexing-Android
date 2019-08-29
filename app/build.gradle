@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion compileAndTargetSdk
-	buildToolsVersion '27.0.3'
+	buildToolsVersion '29.0.2'
 
 	defaultConfig {
 		applicationId "com.example.indexing"
-		minSdkVersion compileAndTargetSdk
+		minSdkVersion 21
 		targetSdkVersion compileAndTargetSdk
 		versionCode 1
 		versionName "1.0"
@@ -36,10 +36,8 @@ android {
 }
 
 dependencies {
-	implementation("com.android.support:appcompat-v7:$supportLibraryVersion") {
-		force = true
-	}
-	implementation "com.google.firebase:firebase-appindexing:$firebaseLibraryVersion"
+	implementation 'androidx.appcompat:appcompat:1.0.2'
+	implementation 'com.google.firebase:firebase-appindexing:19.0.0'
 }
 
 
